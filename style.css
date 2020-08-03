@@ -1,0 +1,30 @@
+.landingpg{
+    background-image: url(./landing\ -background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    padding-top:20%;
+    padding-bottom:30%;
+}
+#mouse-click {
+    padding-top : 22px;
+    margin-top: 10%;
+    padding-bottom: 30px;
+  }
+  #mouse-click {
+    animation: bounce 3s infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-55px);
+    }
+    60% {
+      transform: translateY(-45px);
+    }
+  }
