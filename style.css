@@ -27,3 +27,38 @@
       transform: translateY(-45px);
     }
   }
+  #information{
+    padding-top: 5%;
+    font-size: 22px;
+    padding-right: 8%;
+    padding-left: 5%;
+    color: black;
+  }
+  .container{
+    background-attachment: fixed;
+    background-image: url("./pizz1.jpg");
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(211, 194, 228)
+    padding-top: 4%;
+    padding-bottom: 20%;
+  }
+  #order{
+    color: cornsilk;
+  }
+  .choise{
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  #information{
+    padding-top: 5%;
+    font-size: 22px;
+    padding-right: 8%;
+    padding-left: 5%;
+    color: #ffa500;
+    background-color: darkcyan;
+
+    

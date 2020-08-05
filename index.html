@@ -18,7 +18,6 @@
     </div>
     <div class="container" id="order">
         <h1>Place your order here</h1>
-    </div>
     <div class="row">
         <div class="col-md-5">
             <form action="">
@@ -59,7 +58,7 @@
                   <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
                 </div>
                 <br><br>
-              <button type="submit" class="btn btn-orange proceed">continue</button>
+                <button type="submit" class="btn btn-success" proceed>continue</button>
             </form>
         </div>
             <div class="col-md-7">
@@ -67,9 +66,54 @@
                     <p>Your order will be ready and delivered within 30 minutes from now</p>
                     <p>Pay in cash on delivery or you can also use our M-PESA Till No" 11778890 </p>
                     <p>Enjoy</p>
-                  </div> 
+                  </div>
+                  <div class="choise">
+                    <h2>Your Order is:</h2>
+                    <div id="your-orders">
+                      <table class="table table-sm  pizzatable">
+                        <thead>
+                          <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Size</th>
+                            <th scope="col">Crust</th>
+                            <th scope="col">Topping</th>
+                            <th scope="col">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody id="ordersmade">
+                          <tr>
+                            <td id="pizzaname"></td>
+                            <td id="pizzasize"></td>
+                            <td id="pizzacrust"></td>
+                            <td id="pizzatopping"></td>
+                            <td id="totals"></td>
+                          </tr>                  
+                        </tbody>
+                      </table>
+                      <p id="pizzatotal"></p>
+                      <p id="totalbill"></p> 
+                      <p id="addedprice">Delivery will cost sh. 150</p>
+                      <p id="finallmessage"></p>
+                    </div>
+                    <button class="btn btn-orange addPizza">Add Pizza</button>
+                    <button class="btn btn-orange" id="checkout">Checkout</button>
+                    <button class="btn btn-orange deliver">Home delivery?</button>
+                  </div>
+                  <div class="delivery">
+                      <form action="">
+                        <div class="form-group">
+                          <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                          <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                          <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                          <button class="btn btn-orange" id="final-order">Place Order</button>
+                        </div>
+                      </form>
+                  </div>
+                </div>
             </div>
-    
+          </div>
+        </div>
+            </div>
     </div>
 </div>
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
