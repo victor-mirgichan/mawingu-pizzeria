@@ -41,7 +41,7 @@
     text-align: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: rgb(211, 194, 228)
+    color: rgb(211, 194, 228);
     padding-top: 4%;
     padding-bottom: 20%;
   }
@@ -60,5 +60,9 @@
     padding-left: 5%;
     color: #ffa500;
     background-color: darkcyan;
-
-    
+  }
+  .delivery{
+    display: none;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
