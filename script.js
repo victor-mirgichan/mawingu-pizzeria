@@ -52,7 +52,7 @@ $(document).ready(function(){
       default:
         console.log("No price"); 
     }
-    let topping_value = ptopping.length*50;
+    let topping_value = ptopping.length*100;
     console.log("toppins value" + topping_value);
 
     if((psize == "0") && (pcrust == "0")){
