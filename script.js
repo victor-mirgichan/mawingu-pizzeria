@@ -62,7 +62,7 @@ function calctotalPrice(e) {
   var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
   
       console.log(totalPrice);
-  alert("You have ordered  " + getNumber()+  " pizzas, Your total payable amount is " + totalPrice +"." + "Please fill in your delivery details")
+  alert("You have ordered  " + getNumber()+  " pizzas, Your total payable amount is " + totalPrice +"." + "Please fill in your delivery details to complete your order")
 }
 
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
       var number = $("input#number").val();
       var location = $("input#location").val();
 
-      alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
+      alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within  45 minutes. The delivery will cost ksh 150/= Thank you for choosing Mawingu Pizzeria.");
       // $(this).get(0).reset();
       //  event.preventDefault();
   });
