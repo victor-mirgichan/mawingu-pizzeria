@@ -1,5 +1,5 @@
 function getVariety() {
-  var selectedVariety = document.getElementById("pizz").value;
+  var selectedPizz = document.getElementById("pizz").value;
   return parseInt(selectedPizz);
 }
 function getSizeCost() {
@@ -11,11 +11,15 @@ function getCrustCost() {
   var selectedCrust = document.getElementById("crust").value;
   return parseInt(selectedCrust);
 }
+function getToppingCost() {
+  var selectedtoppingone = document.getElementById("toppingone").value;
+  return parseInt(selectedtoppingone);
+}
 function getNumber() {
   var selectedNumber = document.getElementById("numberofpizza").value;
   return parseInt(selectedNumber);
 }
-function mushrooms() {
+/* function mushrooms() {
   var mushroom = 0;
   var addMushroom = document.getElementById("toppingone");
   if (addMushroom.checked === true) {
@@ -56,13 +60,13 @@ function mozarellaCheese() {
   }
   return parseInt(cheese);
 }
-
+*/ 
 function calctotalPrice(e) {
   event.preventDefault();
-  var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
+  var totalPrice = (getSizeCost() + getCrustCost() + getToppingCost()) * (getNumber());
   
       console.log(totalPrice);
-  alert("You have ordered  " + getNumber()+  " pizzas, Your total payable amount is " + totalPrice +"." + "Please fill in your delivery details to complete your order")
+  alert("You have ordered  " + getNumber() + " Pizza, Your total payable amount is " + totalPrice +"." + "Please fill in your delivery details to complete your order");
 }
 
 
@@ -78,7 +82,7 @@ $(document).ready(function () {
       var number = $("input#number").val();
       var location = $("input#location").val();
 
-      alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within  45 minutes. The delivery will cost ksh 150/= Thank you for choosing Mawingu Pizzeria.");
+      alert("Hello " + name + ". Your order has been successfuly received and  it will be delivered to " +  location + " within  45 minutes. The delivery cost is ksh 150/= Thank you for choosing Mawingu Pizzeria.");
       // $(this).get(0).reset();
       //  event.preventDefault();
   });
