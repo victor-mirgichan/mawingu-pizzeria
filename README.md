@@ -10,6 +10,9 @@ This is a web application for Mawingu pizzeria  which is a pizza restaurant, tha
 ## Screenshot
 ![screenshoot1](mawinguScreenshot.png)
 
+## Live pages
+(https://victor-mirgichan.github.io/mawingu-pizzeria/)
+
 
 ## Technologies used
 * HTML
