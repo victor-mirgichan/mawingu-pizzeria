@@ -1,3 +1,7 @@
+function getVariety() {
+  var selectedVariety = document.getElementById("pizz").value;
+  return parseInt(selectedPizz);
+}
 function getSizeCost() {
   var selectedSize = document.getElementById("size").value;
   return parseInt(selectedSize);
@@ -24,7 +28,7 @@ function sausages() {
   var sausage = 0;
   var addsausage = document.getElementById("toppingone");
   if (addsausage.checked === true) {
-      sausage = 140;
+      sausage = 50;
   }
   return parseInt(sausage);
 }
@@ -32,7 +36,7 @@ function onions() {
   var onion = 0;
   var addonions = document.getElementById("toppingone");
   if (addMushroom.checked === true) {
-      onion = 130;
+      onion = 100;
   }
   return parseInt(onion);
 }
@@ -58,7 +62,7 @@ function calctotalPrice(e) {
   var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
   
       console.log(totalPrice);
-  alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." + "Please fill in your delivery details")
+  alert("Your order of " + getNumber()+  " of your pizzas has been processed.Your total amount payable is " + totalPrice +"." + "Please fill in your delivery details")
 }
 
 
